@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 20;
+    background-color: azure;
+}
+
+.header li{
+
+    background-color: bisque;
+    list-style: none;
+    display: inline;
+}
+
+.header li a{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+}
+
+.content{
+    background-color: antiquewhite;
+    padding: 20px
+}
+
+.myFadeClass-appear{
+
+    opacity: 0;
+
+}
+.myFadeClass-appear.myFadeClass-appear-active{
+
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+
+}
+.mySlider-appear{
+    opacity: 0;
+}
+.mySlider-appear.mySlider-appear-active{
+    opacity: 0;
+    /*transition: opacity 300ms ease, height 400ms ease 300ms;*/
+      
+      animation: slideIn 0.9s ease;
+}
+@keyframes slideIn {
+    0% {
+       opacity:1
+    }
+
+      50% {
+       opacity:0
+    }
+       90% {
+       transform: translate(100px,0);
+    }
+    100% {
+      opacity:0;
+        /*transform: translateY(0px);
+        opacity:1;*/
+    }
+}
+
+
